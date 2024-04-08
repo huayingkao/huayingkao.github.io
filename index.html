@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+  .textt{
+            background-color: #ADD8E6;
+            margin: auto;
+            width: 30%;
+            height: 25%;
+          }
+  .custom-fieldset {/*chatgpt提供的css*/
+		border: 2px solid #ADD8E6; /* 自定意邊框颜色 */
+		border-radius: 5px; /* 自定義編框旁邊的圓角角 */
+		padding: 10px;
+   }	  
+
+  </style>
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <div class="container-fluid">
+    <img src="image/logo.jpg" alt="Logo" style="width:40px;" class="rounded-pill">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#part1">自主學習與成果</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#part2">競賽獲獎與研習</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#part3">個人興趣</a>
+        </li>    
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+	<!--update增加button可以增加carousel的圖片-->
+  </div>
+  
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+  <!--update增加button可以增加carousel的圖片 區塊1-->
+    <div class="carousel-item active">
+      <img src="image/study.jpg" alt="Helloween" class="d-block" style="height:400px;width:100%">
+      <div class="carousel-caption textt">
+        <h3>學習心智圖</h3>
+        <p>mind map</p>
+      </div>
+    </div>
+<!--update增加button可以增加carousel的圖片 區塊2-->	
+    <div class="carousel-item">
+      <img src="image/austin.jpg" alt="Welcom Kaohsiung" class="d-block" style="height:400px;width:100%">
+      <div class="carousel-caption">
+        <h3>江堉廣的生活照</h3>
+        <p>允文允武的江堉廣</p>
+      </div> 
+    </div>
+    <div class="carousel-item">
+      <img src="image/Prize.jpg" alt="Welcom Kaohsiung" class="d-block" style="height:400px;width:100%">
+      <div class="carousel-caption">
+        <h3>獲獎證書</h3>
+        <p>獲獎證書</p>
+      </div> 
+    </div>
+  </div>
+  
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+<div class="row">
+  <div class="card col-sm-4"  id="part1">
+	<div class="card-header bg-dark text-light">自主學習與成果</div>
+	<div class="card-body">
+		<a href="#s1" class="btn btn-success" data-bs-toggle="collapse">程式(展開)</a>
+		<a href="#s2" class="btn btn-success" data-bs-toggle="collapse">軟體(展開)</a>
+		<a href="#s3" class="btn btn-success" data-bs-toggle="collapse">自主學習成果(展開)</a>
+		<div id="s1" class="collapse">
+			<!--<embed src="pdf/python.pdf" width="800px" height="600px" />-->
+			<fieldset class="custom-fieldset">
+				<legend>python</legend>
+					<button type="button" class="btn btn-warning"><a href="#python"><b>python 自主心得(連接至HackMD)</b></a></button><br>
+			 </fieldset>
+			 <fieldset class="custom-fieldset">
+				<legend>網頁</legend>
+					<button type="button" class="btn btn-warning"><a href="#webpage"><b>HTML,CSS,js,bootstrap(網頁)</b></a></button><br>
+					網頁的ㄧ開始是套用樣板<a href="http://www.templatemo.com/tm-488-classic">連結</a><br>
+					爺爺的小朋友玩具店---<a href="https://huayingkao.github.io/toyshop/index.html">連結</a><br>
+			 </fieldset>
+			 <fieldset class="custom-fieldset">
+				<legend>C++</legend>
+					C++,學習半年，基本C++語法看的懂
+			 </fieldset>
+		</div>
+		<div id="s2" class="collapse">
+		<fieldset class="custom-fieldset">
+			<legend>軟體</legend>
+				Adobe:使用adobe編寫圖片或是合成圖片
+		</fieldset>
+		</div>
+		<div id="s3" class="collapse">
+			<fieldset class="custom-fieldset">
+				<legend>自主學習成果</legend>
+					<button type="button" class="btn btn-warning"><a href="#sresult1"><b>APCS、USAC與CPE檢定(連接至HackMD)</b></a></button>
+					<button type="button" class="btn btn-warning"><a href="#sresult2"><b>機器學習(連接至HackMD)</b></a></button>
+
+			 </fieldset>
+		</div>
+	</div>
+   </div>
+  
+  <div class="card col-sm-4">
+	  <div class="card-header  bg-dark text-light" id="part2">競賽獲獎與研習</div>
+	  <div class="card-body">
+	  
+		<a href="#a1" class="btn btn-success" data-bs-toggle="collapse">競賽獲獎(展開)</a>
+		<a href="#a2" class="btn btn-success" data-bs-toggle="collapse">研習(展開)</a>
+			<div id="a1" class="collapse">
+				<fieldset class="custom-fieldset">
+				<legend>競賽獲獎</legend>
+				<button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#p1Modal">獎狀</button>
+				<button type="button" class="btn btn-danger"><a href="#prize1" style="color: black;"><b>i-steam power Tech亞軍</b></a></button>
+				
+				<!-- i-steam power Tech亞軍 -->
+				<div class="modal" id="p1Modal">
+					<div class="modal-dialog">
+						<div class="modal-content">
+						<!-- Modal Header -->
+							<div class="modal-header">
+								<h4 class="modal-title">i-steam power Tech亞軍</h4>
+								<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+							</div>
+
+						<!-- Modal body -->
+							<div class="modal-body">
+								<img src="image/isteam.jpg" alt="i-steam power Tech亞軍" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
+							</div>
+						<!-- Modal footer -->
+							<div class="modal-footer">
+								<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<br><button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#p2Modal">獎狀</button>
+				<button type="button" class="btn btn-warning"><a href="#prize2" style="color: black;">全國高級中等學校心得寫作比賽特優</button>
+				<!-- 全國高級中等學校心得寫作比賽特優 -->
+				<div class="modal" id="p2Modal">
+					<div class="modal-dialog">
+						<div class="modal-content">
+						<!-- Modal Header -->
+							<div class="modal-header">
+								<h4 class="modal-title">全國高級中等學校心得寫作比賽特優</h4>
+								<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+							</div>
+
+						<!-- Modal body -->
+							<div class="modal-body">
+								<img src="image/write.jpg" alt="i-steam power Tech亞軍" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
+							</div>
+						<!-- Modal footer -->
+							<div class="modal-footer">
+								<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<br><button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#p3Modal">獎狀</button>
+				<button type="button" class="btn btn-warning"><a href="#prize3" style="color: black;">高中組直立鈴男子組甲等</a></button>
+				<!-- 高中組直立鈴男子組甲等 -->
+				<div class="modal" id="p3Modal">
+					<div class="modal-dialog">
+						<div class="modal-content">
+						<!-- Modal Header -->
+							<div class="modal-header">
+								<h4 class="modal-title">高中組直立鈴男子組甲等</h4>
+								<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+							</div>
+
+						<!-- Modal body -->
+							<div class="modal-body">
+								<img src="image/yoyo.jpg" alt="高中組直立鈴男子組甲等" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
+							</div>
+						<!-- Modal footer -->
+							<div class="modal-footer">
+								<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				</fieldset>	
+			</div>
+		<div id="a2" class="collapse">
+			<fieldset class="custom-fieldset">
+				<legend>研習</legend>
+					<button type="button" class="btn btn-warning"><a href="#sresult3"><b>研習心得</b></a></button>
+			 </fieldset>
+		</div>	
+	 </div>
+  </div>
+  <div class="card col-sm-4"  id="part3">
+	<div class="card-header  bg-dark text-light">個人興趣</div>
+	<div class="card-body">
+		<a href="#c1" class="btn btn-success" data-bs-toggle="collapse">繪畫</a>
+		
+		<a href="#c2" class="btn btn-success" data-bs-toggle="collapse">鋼琴</a>
+		
+		<div id="c1" class="collapse">
+		<fieldset class="custom-fieldset">
+				<legend>繪畫</legend>
+					<button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#printModal">繪畫</button>
+			 </fieldset>
+		
+			<!-- The Modal 繪畫 -->
+			<div class="modal" id="printModal">
+				<div class="modal-dialog">
+					<div class="modal-content">
+					<!-- Modal Header -->
+						<div class="modal-header">
+							<h4 class="modal-title">素描與電繪</h4>
+							<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+						</div>
+
+					<!-- Modal body -->
+						<div class="modal-body">
+						素描
+							<img src="image/s1.jpg" alt="繪畫" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
+						phtoshop(左) 電繪(右)	
+						<img src="image/s2.jpg" alt="繪畫" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
+						</div>
+
+					<!-- Modal footer -->
+						<div class="modal-footer">
+							<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<!-- The Modal 繪畫 -->		
+		</div>
+		
+		<div id="c2" class="collapse">
+			<fieldset class="custom-fieldset">
+				<legend>鋼琴演奏</legend>
+					<button type="button" class="btn btn-warning" onclick="window.open('piano.mp4')">鋼琴演奏mp4(另跳視窗)</button>
+					小時候學琴，後來變成我用來排解壓力的好方法，所以有時候學習壓力大，會喜歡自己彈奏或是到youtube上找譜來彈，真的很有趣。
+			 </fieldset>
+		</div>
+		<!--UPDATE 需要加的東西 區塊1-->
+		
+	</div>
+   </div>  
+</div>
+
+
+<div  class="container-fluid mt-5 ">
+    <div class="col-sm-12 bg-success" id="python">
+      <h3>python自主學習</h3>
+      <center><iframe src="https://hackmd.io/wOy7PQyqREarw5hU-Bkjbw?view" height="500px" width="80%" title="python自主學習成果" defer></iframe></center>
+    </div>
+</div>
+<div  class="container-fluid mt-5 ">
+    <div class="col-sm-12 bg-success" id="webpage">
+      <h3>網頁自主學習</h3>
+	  <h4>有趣的小朋友玩具店網站<img src="image/toy.png" height="100px" width="100px" onclick="window.open('https://huayingkao.github.io/toyshop/index.html')">
+      <center><iframe src="https://hackmd.io/dTXC0JpITQSZsjYMLd0MxA?view" height="500px" width="80%" title="網頁自主學習"></iframe></center>
+    </div>
+</div>
+
+<div  class="container-fluid mt-5 ">
+    <div class="col-sm-12 bg-success" id="sresult1">
+      <h3>自主學習成果報告—APCS、USACO以及CPE資訊能力檢定備考歷程</h3>
+      <center><iframe src="https://hackmd.io/m0b3wdzwSraVuSlQU-qaEQ?view" height="500px" width="80%" title="自主學習成果" defer></iframe></center>
+    </div>
+</div>
+<div class="container-fluid text-center bg-info" id="sresult2" height="500px">
+	<h2>機器人學習</h2>
+    <div class="col-sm-12" >
+       <iframe src="https://hackmd.io/W9FN195WSke-UOAYnUKU7g?both" height="500px" width="80%" title="機器人學習" defer></iframe>		
+    </div>
+ </div>
+ 
+ <div class="container-fluid text-center bg-info" id="prize2" height="500px">
+	<h2>110 學年度全國各級學校民俗體育競賽-高中組直立鈴男子組甲等</h2>
+    <div class="col-sm-12" >
+       <embed src="pdf/prize2.pdf" width="800px" height="600px" />		
+    </div>
+ </div>
+ <div class="container-fluid text-center bg-info" id="prize3" height="500px">
+	<h2>全國高級中等學校心得寫作比賽特優</h2>
+    <div class="col-sm-12" >
+       <embed src="pdf/prize3.pdf" width="800px" height="600px" />		
+    </div>
+ </div>
+ <div class="col-sm-12 bg-success" id="sresult3">
+      <h3>營隊研習成果報告</h3>
+      <center><iframe src="https://hackmd.io/5MHDKd8XSjyX_IZxmPNsQg?both" height="500px" width="80%" title="營隊研習成果報告" defer></iframe></center>
+    </div>
+
+</body>
+<footer>  
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2023 Yano
+        </div>    
+    </footer>  
+</html>
+
+
